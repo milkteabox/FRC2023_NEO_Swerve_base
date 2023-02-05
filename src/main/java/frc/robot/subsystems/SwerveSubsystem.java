@@ -30,16 +30,16 @@ public class SwerveSubsystem extends SubsystemBase {
                         SWERVE_LEFTFRONT_OFFSET),
                 new SwerveModule(
                         1, SwerveTypeConstants.SDSMK4I_L1(),
-                        SWERVE_LEFTRARE_DRIVEMOTOR,SWERVE_LEFTRARE_ANGLEMOTOR,SWERVE_LEFTRARE_CANCODER,
-                        SWERVE_LEFTRARE_OFFSET),
+                        SWERVE_LEFTREAR_DRIVEMOTOR,SWERVE_LEFTREAR_ANGLEMOTOR,SWERVE_LEFTREAR_CANCODER,
+                        SWERVE_LEFTREAR_OFFSET),
                 new SwerveModule(
                         2, SwerveTypeConstants.SDSMK4I_L2(),
                         SWERVE_RIGHTFRONT_DRIVEMOTOR,SWERVE_RIGHTFRONT_ANGLEMOTOR,SWERVE_RIGHTFRONT_CANCODER,
                         SWERVE_RIGHTFRONT_OFFSET),
                 new SwerveModule(
                         3, SwerveTypeConstants.SDSMK4I_L1(),
-                        SWERVE_RIGHTRARE_DRIVEMOTOR,SWERVE_RIGHTRARE_ANGLEMOTOR,SWERVE_RIGHTRARE_CANCODER,
-                        SWERVE_RIGHTRARE_OFFSET)
+                        SWERVE_RIGHTREAR_DRIVEMOTOR,SWERVE_RIGHTREAR_ANGLEMOTOR,SWERVE_RIGHTREAR_CANCODER,
+                        SWERVE_RIGHTREAR_OFFSET)
         };
         Timer.delay(1.0);
         resetModulesToAbsolute();
