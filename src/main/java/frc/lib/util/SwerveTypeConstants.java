@@ -34,7 +34,7 @@ public class SwerveTypeConstants {
         double angleGearRatio = SWERVE_ANGLEGEAR_RATIOS_MK4;
         double driveGearRatio = SWERVE_MK4_DRIVEGEAR_RATIOS_L1;
 
-        double angleKP = 0.2;
+        double angleKP = 0.01;
         double angleKI = 0.0;
         double angleKD = 0.0;
         double angleKF = 0.0;
@@ -54,7 +54,7 @@ public class SwerveTypeConstants {
         double angleGearRatio = SWERVE_ANGLEGEAR_RATIOS_MK4;
         double driveGearRatio = SWERVE_MK4_DRIVEGEAR_RATIOS_L2;
 
-        double angleKP = 0.2;
+        double angleKP = 0.01;
         double angleKI = 0.0;
         double angleKD = 0.0;
         double angleKF = 0.0;
@@ -74,7 +74,7 @@ public class SwerveTypeConstants {
         double angleGearRatio = SWERVE_ANGLEGEAR_RATIOS_MK4I;
         double driveGearRatio = SWERVE_MK4_DRIVEGEAR_RATIOS_L1;
 
-        double angleKP = 0.3;
+        double angleKP = 0.01;
         double angleKI = 0.0;
         double angleKD = 0.0;
         double angleKF = 0.0;
@@ -94,7 +94,7 @@ public class SwerveTypeConstants {
         double angleGearRatio = SWERVE_ANGLEGEAR_RATIOS_MK4I;
         double driveGearRatio = SWERVE_MK4_DRIVEGEAR_RATIOS_L2;
 
-        double angleKP = 0.3;
+        double angleKP = 0.01;
         double angleKI = 0.0;
         double angleKD = 0.0;
         double angleKF = 0.0;

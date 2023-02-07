@@ -40,15 +40,13 @@ public class SwerveModule {
         configAngleCanCoder();
 
         driveNEO = new CANSparkMax(driveMotorID, CANSparkMaxLowLevel.MotorType.kBrushless);
-        configDriveMotor();
         driveMotorEncoder = driveNEO.getEncoder();
-        configDriveMotorEncoder();
+        configDriveMotor();
 
 
         angleNEO = new CANSparkMax(angleMotorID, CANSparkMaxLowLevel.MotorType.kBrushless);
-        configAngleMotor();
         angleMotorEncoder = angleNEO.getEncoder();
-        configAngleMotorEncoder();
+        configAngleMotor();
 
         lastAngle = getState().angle;
     }
@@ -108,13 +106,11 @@ public class SwerveModule {
         driveNEO.enableVoltageCompensation(VOLTAGE_COMPENSATION);
         driveNEO.setInverted(swerveTypeConstants.driveMotorInvert);
         driveNEO.setIdleMode(DRIVE_NEUTRAL_MODE);
-        driveNEO.burnFlash();
-    }
 
-    private void configDriveMotorEncoder(){
-        driveMotorEncoder.setVelocityConversionFactor(SWERVE_WHEEL_CIRCUMFERENCE / swerveTypeConstants.driveGearRatio / 60.0);
         driveMotorEncoder.setPositionConversionFactor(SWERVE_WHEEL_CIRCUMFERENCE / swerveTypeConstants.driveGearRatio);
+        driveMotorEncoder.setVelocityConversionFactor(SWERVE_WHEEL_CIRCUMFERENCE / swerveTypeConstants.driveGearRatio / 60.0);
         driveMotorEncoder.setPosition(0);
+        driveNEO.burnFlash();
     }
 
     private void configAngleMotor(){
@@ -128,13 +124,11 @@ public class SwerveModule {
         angleNEO.enableVoltageCompensation(VOLTAGE_COMPENSATION);
         angleNEO.setInverted(swerveTypeConstants.angleMotorInvert);
         angleNEO.setIdleMode(ANGLE_NEUTRAL_MODE);
-        angleNEO.burnFlash();
-    }
-
-    private void configAngleMotorEncoder(){
         angleMotorEncoder.setPositionConversionFactor(360 / swerveTypeConstants.angleGearRatio);
+        angleNEO.burnFlash();
         resetToAbsolute();
     }
+
 
     private void configAngleCanCoder(){
         CANCoderConfiguration canCoderConfiguration = new CANCoderConfiguration();
