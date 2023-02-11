@@ -20,7 +20,7 @@ public class SwerveSubsystem extends SubsystemBase {
     public AHRS navX;
 
     public SwerveSubsystem(){
-        navX = new AHRS(SerialPort.Port.kMXP);
+        navX = new AHRS(SerialPort.Port.kUSB1);
         navX.reset();
 
         swerveModules = new SwerveModule[]{

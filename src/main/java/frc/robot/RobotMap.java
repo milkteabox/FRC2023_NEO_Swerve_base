@@ -16,6 +16,6 @@ public class RobotMap {
 
     public static final int SWERVE_RIGHTREAR_DRIVEMOTOR = 5;
     public static final int SWERVE_RIGHTREAR_ANGLEMOTOR = 6;
-    public static final int SWERVE_RIGHTREAR_CANCODER = 4;
+    public static final int SWERVE_RIGHTREAR_CANCODER = 3;
 
 }

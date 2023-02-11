@@ -14,10 +14,10 @@ import edu.wpi.first.math.util.Units;
 
 public final class Constants
 {
-    public static final Rotation2d SWERVE_LEFTFRONT_OFFSET = Rotation2d.fromDegrees(0.0);
-    public static final Rotation2d SWERVE_LEFTREAR_OFFSET = Rotation2d.fromDegrees(0.0);
-    public static final Rotation2d SWERVE_RIGHTFRONT_OFFSET = Rotation2d.fromDegrees(0.0);
-    public static final Rotation2d SWERVE_RIGHTREAR_OFFSET = Rotation2d.fromDegrees(0.0);
+    public static final Rotation2d SWERVE_LEFTFRONT_OFFSET = Rotation2d.fromDegrees(157.763672);
+    public static final Rotation2d SWERVE_LEFTREAR_OFFSET = Rotation2d.fromDegrees(241.962891);
+    public static final Rotation2d SWERVE_RIGHTFRONT_OFFSET = Rotation2d.fromDegrees(259.101563);
+    public static final Rotation2d SWERVE_RIGHTREAR_OFFSET = Rotation2d.fromDegrees(222.011719);
 
     public static final double SWERVE_CHASSIS_TRACKWIDTH_METERS = 0.62865;
     public static final double SWERVE_CHASSIS_WHEELBASE_METERS = 0.62865;
